@@ -1,0 +1,7 @@
+param_id,boundary_id,mean_hit_rate,std_seed,ci95_low,ci95_high,seed_count
+main,loose,1.0,0.0,1.0,1.0,10
+main,medium,0.49884,0.004476159067772267,0.4960656478666182,0.5016143521333818,10
+main,tight,0.0,0.0,0.0,0.0,10
+aligned,loose,1.0,0.0,1.0,1.0,10
+aligned,medium,0.49956,0.005709679889840098,0.4960211037401786,0.5030988962598214,10
+aligned,tight,0.0,0.0,0.0,0.0,10

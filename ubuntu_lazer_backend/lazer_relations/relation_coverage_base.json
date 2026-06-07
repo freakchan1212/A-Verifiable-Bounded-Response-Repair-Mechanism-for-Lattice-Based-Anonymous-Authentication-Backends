@@ -1,0 +1,32 @@
+{
+  "version": "v1.1-hardening",
+  "lazer_proved": [
+    "core_linear_relation_As_eq_t",
+    "committed_offset_repair_relation_z_raw_equals_z_repaired_plus_delta"
+  ],
+  "bridge_verified": [
+    "bound_check",
+    "clip_B_determinism",
+    "delta_commitment",
+    "repair_digest",
+    "ctx_digest",
+    "refresh_tag",
+    "credential_commitment",
+    "credential_tag",
+    "nullifier",
+    "public_response_digest"
+  ],
+  "future_lazer_relation_targets": [
+    "credential_validity",
+    "hash_or_algebraic_digest_relation",
+    "nullifier_relation",
+    "refresh_state_relation",
+    "full_committed_offset_repair_relation"
+  ],
+  "non_claims": [
+    "production_deployment",
+    "full_anonymous_credential_security",
+    "all_hashes_inside_lazer",
+    "formal_zk_proof_for_entire_system"
+  ]
+}

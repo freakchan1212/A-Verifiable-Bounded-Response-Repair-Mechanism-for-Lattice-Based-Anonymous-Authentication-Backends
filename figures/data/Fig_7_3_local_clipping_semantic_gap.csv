@@ -1,0 +1,4 @@
+boundary_id,direct_z,recovered_z_delta,full_repair,semantic_gap
+loose,1.0,1.0,1.0,0.0
+medium,0.8885,1.0,1.0,0.1115
+tight,0.0,1.0,1.0,1.0

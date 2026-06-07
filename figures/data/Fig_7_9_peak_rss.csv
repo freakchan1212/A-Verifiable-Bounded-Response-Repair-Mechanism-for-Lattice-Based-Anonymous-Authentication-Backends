@@ -1,0 +1,7 @@
+path_label,short_label,sample_kind,peak_rss_kb,max_rss_mb
+true minimal LaZer baseline,Minimal LaZer,minimal_lazer,108604,106.059
+zero-offset committed control,Zero-offset,committed_no_repair,694248,677.977
+repair-enabled committed path,Repair-enabled,committed_repair_only,694040,677.773
+controlled mixed committed path,Controlled mixed,committed_mixed,693860,677.598
+SHA-256 fullrelation extension,SHA-256 fullrelation,fullrelation,695040,678.75
+output-limb splice upper-bound,Output-limb splice,multi_native_splice,198688,194.031

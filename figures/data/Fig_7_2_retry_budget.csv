@@ -1,0 +1,7 @@
+param_id,param_label,method_label,budget,success_rate,attempts_mean,total_ms_mean,total_ms_p95
+main,Main,Repair,-,1.0,1.0,1.5797029695707292,1.6354862853080832
+main,Main,Abort/retry T=10,10,0.0,10.0,15.201015559511887,15.466282463060152
+main,Main,Abort/retry T=2000,2000,0.0,2000.0,3040.249083383753,3094.032955534101
+aligned,Aligned,Repair,-,1.0,1.0,1.4305980550216084,1.4791219874866526
+aligned,Aligned,Abort/retry T=10,10,0.0,10.0,13.703788943287837,13.94851296730928
+aligned,Aligned,Abort/retry T=2000,2000,0.0,2000.0,2740.3612369144853,2788.789827004008

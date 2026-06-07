@@ -1,0 +1,36 @@
+{
+  "version": "v2.1-sha256-authrelation-hardening",
+  "project_scope": "lattice-based anonymous authentication backend; not a general-purpose anonymous credential system",
+  "v2_1_new": [
+    "v1.2-v2.0 cost/coverage comparison tooling",
+    "machine-readable SHA-256 constraint IR export",
+    "registration-token issue/show unit tests",
+    "combo tamper tests across digest, membership, nullifier, repair, and scope fields"
+  ],
+  "paper_safe_claim": "v2.1 hardens the route-B SHA-256 authrelation branch with coverage-cost comparison, issue/show tests, combo tamper tests, and SHA-256 constraint-IR export. It remains an engineering fullrelation branch around the LaZer algebraic core, not a production UC-secure anonymous-authentication library.",
+  "lazer_proved_current": [
+    "A*s + public_t = 0",
+    "z_raw = z + Delta",
+    "algebraic Delta opening surrogate",
+    "algebraic membership commitment surrogate",
+    "algebraic nullifier/scope surrogate",
+    "algebraic refresh transition surrogate"
+  ],
+  "sha256_circuit_checked": [
+    "commitment = SHA256(commitment_preimage)",
+    "challenge = SHA256(challenge_preimage)",
+    "ctx_digest = SHA256(ctx_preimage)",
+    "repair_digest = SHA256(repair_preimage)",
+    "public_response_digest = SHA256(response_preimage)",
+    "delta_commitment = SHA256(delta_preimage)",
+    "membership_commitment = SHA256(member_secret, token_randomness, issuer_scope)",
+    "membership_tag = SHA256(membership_commitment, issuer_scope)",
+    "nullifier = SHA256(scope, epoch, member_secret, randomness)",
+    "refresh_tag = SHA256(refresh_state, epoch)"
+  ],
+  "not_yet_machine_checked": [
+    "native compiler lowering SHA-256 IR into LaZer constraints",
+    "full issuer-token unforgeability reduction",
+    "complete UC theorem with simulator and composition proof"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "v1.3-relation-expansion",
+  "lazer_proved": [
+    "A*s + public_t = 0",
+    "z_raw = z_repaired + Delta",
+    "R1: Delta + rho_Delta = C_Delta_poly (algebraic opening surrogate)",
+    "R2: cred_secret + rho_cred = C_cred_poly (credential commitment surrogate)",
+    "R3: cred_secret + scope_token = N_poly (nullifier/scope surrogate)",
+    "R4: refresh_old + accept = refresh_new_poly (refresh transition surrogate)"
+  ],
+  "bridge_verified": [
+    "SHA-256 delta_commitment string",
+    "SHA-256 credential_commitment string",
+    "credential_tag string",
+    "nullifier string",
+    "ctx_digest string",
+    "refresh_state and refresh_tag strings",
+    "repair_digest and public_response_digest strings",
+    "repair_meta deterministic encoding"
+  ],
+  "not_yet_claimed": [
+    "full SHA-256 circuit inside LaZer",
+    "production-grade anonymous credential issuance/show relation",
+    "UC-style anonymity/unlinkability/ZK proof",
+    "audited side-channel safe implementation"
+  ]
+}

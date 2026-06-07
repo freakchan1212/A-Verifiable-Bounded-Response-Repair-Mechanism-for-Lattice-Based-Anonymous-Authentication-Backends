@@ -1,0 +1,34 @@
+{
+  "version": "v2.3-native-refresh-splice",
+  "project_scope": "lattice-based anonymous authentication backend; not a general-purpose anonymous credential system",
+  "lazer_proved_current": [
+    "A*s + public_t = 0",
+    "z_raw = z + Delta",
+    "algebraic Delta opening surrogate",
+    "algebraic membership commitment surrogate",
+    "algebraic nullifier/scope surrogate",
+    "algebraic refresh transition surrogate",
+    "native refresh-tag digest-bit splice: head(refresh_tag_bits) and tail(refresh_tag_bits) are bound by LaZer rows 6 and 7"
+  ],
+  "sha256_circuit_checked": [
+    "commitment = SHA256(commitment_preimage)",
+    "challenge = SHA256(challenge_preimage)",
+    "ctx_digest = SHA256(ctx_preimage)",
+    "repair_digest = SHA256(repair_preimage)",
+    "public_response_digest = SHA256(response_preimage)",
+    "delta_commitment = SHA256(delta_preimage)",
+    "membership_commitment = SHA256(member_secret, token_randomness, issuer_scope)",
+    "membership_tag = SHA256(membership_commitment, issuer_scope)",
+    "nullifier = SHA256(scope, epoch, member_secret, randomness)",
+    "refresh_tag = SHA256(refresh_state, epoch)",
+    "v2.3 native refresh-tag output-bit splice uses the compiler plan for v2_refresh_tag"
+  ],
+  "not_yet_machine_checked": [
+    "full SHA-256 compression gadget mapped into LaZer constraints",
+    "native nullifier SHA-256 splice into proof generation",
+    "native repair_digest SHA-256 splice into proof generation",
+    "full issuer-token unforgeability reduction",
+    "complete UC theorem with simulator and composition proof"
+  ],
+  "paper_safe_claim": "v2.3 splices the selected refresh-tag SHA-256 digest output bits into the generated LaZer proof path using rows 6 and 7, while SHA-256 compression/preimage checking remains in the fullrelation checker/IR path. It is the first native-splice prototype, not a complete native SHA-256 LaZer proof."
+}

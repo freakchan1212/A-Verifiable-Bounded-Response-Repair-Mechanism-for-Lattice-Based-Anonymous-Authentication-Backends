@@ -1,0 +1,5 @@
+category,attack_samples,rejected_attack_samples,rejection_rate,honest_samples,honest_accept_rate
+Serialization,5,5,1.0,0,
+State rollback,4,4,1.0,1,1.0
+Combination tamper,5,5,1.0,1,1.0
+Output-limb splice,40,40,1.0,1,1.0

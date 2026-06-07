@@ -1,0 +1,17 @@
+attack,verifier_variant,accept_rate
+Honest,Full,1.0
+Honest,No ctx,1.0
+Honest,No refresh,1.0
+Honest,No binding,1.0
+Wrong ctx,Full,0.0
+Wrong ctx,No ctx,1.0
+Wrong ctx,No refresh,0.0
+Wrong ctx,No binding,1.0
+Stale refresh,Full,0.0
+Stale refresh,No ctx,0.0
+Stale refresh,No refresh,1.0
+Stale refresh,No binding,1.0
+Both wrong,Full,0.0
+Both wrong,No ctx,0.0
+Both wrong,No refresh,0.0
+Both wrong,No binding,1.0

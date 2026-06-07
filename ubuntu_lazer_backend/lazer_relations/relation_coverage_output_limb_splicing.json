@@ -1,0 +1,33 @@
+{
+  "version": "v2.4-multi-native-splice",
+  "project_scope": "lattice-based anonymous authentication backend; not a general-purpose anonymous credential system",
+  "not_yet_machine_checked": [
+    "full SHA-256 compression gadget mapped into LaZer constraints",
+    "native preimage-to-digest constraints inside proof generation",
+    "full issuer-token unforgeability reduction",
+    "complete UC theorem with simulator and composition proof"
+  ],
+  "paper_safe_claim": "v2.4 splices output limbs of multiple selected SHA-256 digest relations into the generated LaZer proof path. It is a larger native-splice prototype that checks digest limb binding natively while SHA-256 compression/preimage correctness remains in the fullrelation checker/IR path.",
+  "lazer_proved_current": [
+    "A*s + public_t = 0",
+    "z_raw = z + Delta",
+    "algebraic Delta opening surrogate",
+    "algebraic membership/token commitment surrogate",
+    "algebraic nullifier/scope surrogate",
+    "algebraic refresh transition surrogate",
+    "multi-native digest output-bit splice: refresh_tag, nullifier, credential_commitment, credential_tag, delta_commitment, ctx_digest, public_response_digest, and repair_digest head/tail limbs are bound by LaZer rows 6..21"
+  ],
+  "sha256_circuit_checked": [
+    "commitment = SHA256(commitment_preimage)",
+    "challenge = SHA256(challenge_preimage)",
+    "ctx_digest = SHA256(ctx_preimage)",
+    "repair_digest = SHA256(repair_preimage)",
+    "public_response_digest = SHA256(response_preimage)",
+    "delta_commitment = SHA256(delta_preimage)",
+    "membership_commitment = SHA256(member_secret, token_randomness, issuer_scope)",
+    "membership_tag = SHA256(membership_commitment, issuer_scope)",
+    "nullifier = SHA256(scope, epoch, member_secret, randomness)",
+    "refresh_tag = SHA256(refresh_state, epoch)",
+    "v2.4 native output-bit splice uses compiler plans for all selected digest relations"
+  ]
+}

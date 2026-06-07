@@ -1,0 +1,30 @@
+{
+  "version": "v2.0-sha256-authrelation",
+  "project_scope": "lattice-based anonymous authentication backend, not a general-purpose anonymous credential system",
+  "lazer_proved_current": [
+    "A*s + public_t = 0",
+    "z_raw = z + Delta",
+    "algebraic Delta opening surrogate",
+    "algebraic membership commitment surrogate",
+    "algebraic nullifier/scope surrogate",
+    "algebraic refresh transition surrogate"
+  ],
+  "sha256_circuit_checked": [
+    "commitment = SHA256(commitment_preimage)",
+    "challenge = SHA256(challenge_preimage)",
+    "ctx_digest = SHA256(ctx_preimage)",
+    "repair_digest = SHA256(repair_preimage)",
+    "public_response_digest = SHA256(response_preimage)",
+    "delta_commitment = SHA256(delta_preimage)",
+    "membership_commitment = SHA256(member_secret, token_randomness, issuer_scope)",
+    "membership_tag = SHA256(membership_commitment, issuer_scope)",
+    "nullifier = SHA256(scope, epoch, member_secret, randomness)",
+    "refresh_tag = SHA256(refresh_state, epoch)"
+  ],
+  "not_yet_machine_checked": [
+    "A project-specific compiler that converts the SHA-256 bit relation into native LaZer constraints",
+    "A complete issuer-token unforgeability reduction",
+    "A complete UC theorem with simulator and composition proof"
+  ],
+  "paper_safe_claim": "v2.0 adds a standard SHA-256 fullrelation checker and auth-token/nullifier/refresh digest relations around the LaZer algebraic core; it is a route-B full-relation engineering branch, not yet a machine-checked UC-secure production anonymous-authentication library."
+}
